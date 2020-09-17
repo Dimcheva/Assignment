@@ -19,7 +19,7 @@ public class E2E {
         driver.findElement(By.xpath("//a[@value='JAI']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='AIP']")).click();
-        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-hover")).click();
+        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-hover")).click();//select current day from the calendar
 
         if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) //way to check if element is disabled
         {
