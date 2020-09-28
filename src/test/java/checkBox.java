@@ -7,7 +7,7 @@ import org.testng.Assert;
 import java.util.List;
 
 
-public class CheckBox {
+public class checkBox {
     public static void main(String[] args) throws  InterruptedException {
 
 
