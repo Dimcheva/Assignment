@@ -4,9 +4,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class ClearTrip {
+public class clearTrip {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\myWork\\project assets\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
@@ -16,9 +16,9 @@ public class ClearTrip {
         driver.findElement(By.xpath("//div[@class='span span15 datePicker'] //input[@type='text']")).click();
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active ")).click(); //calendar current day
 
-        Select adults = new Select (driver.findElement(By.id("Adults")));
+        Select adults = new Select(driver.findElement(By.id("Adults")));
         adults.selectByVisibleText("3");
-        Select children = new Select (driver.findElement(By.id("Childrens")));
+        Select children = new Select(driver.findElement(By.id("Childrens")));
         children.selectByVisibleText("4");
         Select infants = new Select(driver.findElement(By.id("Infants")));
         infants.selectByVisibleText("1");
@@ -32,14 +32,6 @@ public class ClearTrip {
         driver.findElement(By.cssSelector("input[id='SearchBtn']")).click();
 
         System.out.println(driver.findElement(By.id("homeErrorMessage")).getText());
-
-
-
-
-
-
-
-
 
 
     }
